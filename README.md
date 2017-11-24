@@ -84,6 +84,7 @@ The `options` parameter is optional. It can be either a raw object (see [below](
 | `layers` | Positive integer | The number of layers to be inserted below the scratchcard. | `0` |
 | `painter` | A `Painter` instance or a raw object | The painter to be used, or a set of options to be passed to the default `Painter` constructor. | `{}` (default painter) |
 | `animationFrame` | An object defining a `request` method | An alternative implementation for the native `requestAnimationFrame` API. An instance of the [`animation-frame`](https://github.com/kof/animation-frame) module fits perfectly here, but feel free to provide the implementation of your choice. | `null` (native implementation) |
+| `aspectRatio` | Float | Aspect ratio applied to height when it's not available | undefined |
 
 #### Scratchcard methods
 
