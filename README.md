@@ -27,6 +27,10 @@ var scratchcard = new Scratchcard(document.getElementById('hidden-content'));
 scratchcard.on('progress', function onProgress(progress) {
     console.log('Progress: ' + Math.floor(progress * 100) + '%');
 });
+
+scratchcard.on('redraw', function () {
+    console.log('ScratchCard was redrawn');
+});
 ```
 
 ### AMD (RequireJS)
@@ -44,6 +48,10 @@ define(['scratchcard'], function (Scratchcard) {
     scratchcard.on('progress', function onProgress(progress) {
         console.log('Progress: ' + Math.floor(progress * 100) + '%');
     });
+
+    scratchcard.on('redraw', function () {
+        console.log('ScratchCard was redrawn');
+    });
 });
 ```
 
@@ -56,6 +64,10 @@ define(['scratchcard'], function (Scratchcard) {
 
     scratchcard.on('progress', function onProgress(progress) {
         console.log('Progress: ' + Math.floor(progress * 100) + '%');
+    });
+
+    scratchcard.on('redraw', function () {
+        console.log('ScratchCard was redrawn');
     });
 </script>
 ```
